@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 #map { height: 180px; }
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }

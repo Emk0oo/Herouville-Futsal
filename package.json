@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Emk0oo/herouville-futsal#readme",
   "devDependencies": {
     "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "swiper": "^11.0.7"
   }
 }

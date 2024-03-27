@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/output.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <link
       rel="stylesheet"
@@ -13,8 +16,10 @@
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
-
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <nav
@@ -22,7 +27,7 @@
     >
       <img src="../assets/logo.png" alt="logo" class="w-28" />
 
-      <ul class="flex gap-4 text-white mr-4">
+      <ul class="flex gap-4 text-white mr-20">
         <li>
           <a href="#" class="text-white">Accueil</a>
         </li>
@@ -38,7 +43,7 @@
       </ul>
     </nav>
 
-    <div class="flex justify-center gap-4 items-center bg-bleu">
+    <div class="flex justify-center gap-4 items-center bg-bleu text-white">
       <div class="ml-10 w-3/5 z-10">
         <h1 class="text-4xl">Bienvenue sur notre site</h1>
         <p class="mt-4 max-w-[90%]">
@@ -64,27 +69,72 @@
       </svg>
     </div>
 
-    <div>
-      <h1 class="text-4xl ">Actualités</h1>
+    <div id="Actualite">
+      <h1 class="text-4xl">Actualités</h1>
       <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide text-center">
+            <h1 class="text-2xl">Titre Article</h1>
+            <img
+              src="../assets/paysage.png"
+              alt="paysage"
+              class="w-1/2 h-1/2"
+            />
+            <p>Lorem</p>
+          </div>
           <div class="swiper-slide">Slide 2</div>
           <div class="swiper-slide">Slide 3</div>
           ...
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
-      
+
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-      
+
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
       </div>
+    </div>
+
+    <div id="histoire" class="flex flex-col gap-y-4 mb-4">
+      <h1 class="text-4xl ml-10">Notre histoire</h1>
+      <div class="text-center mx-16 max-w-[90%] space-y-4">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum
+        </p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum
+        </p>
+        <button class="bg-bleu ">
+          Button
+        </button>
+      </div>
+
+    </div>
+
+    <div id="equipe">
+      <button class="border">Button</button>
+
     </div>
 
     <footer class="bg-bleu p-4 text-white text-center w-full h-auto">
@@ -121,12 +171,13 @@
       </div>
     </footer>
   </body>
-  <script src="../js/map.js"></script>
-  <script src="../js/swiper.js"></script>
   <script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-  crossorigin=""
-></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="../js/map.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="../js/swiper.js"></script>
 </html>
