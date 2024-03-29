@@ -1,0 +1,92 @@
+<div class="flex justify-center gap-4 items-center bg-bleu text-white">
+      <div class="ml-40 w-3/5 z-10">
+        <h1 class="text-4xl">Bienvenue sur notre site</h1>
+        <p class="mt-4 max-w-[90%]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          voluptates.
+        </p>
+      </div>
+      <div class="w-2/5 z-10">
+        <img
+          src="../assets/paysage.png"
+          alt="paysage"
+          class="mx-4 w-1/2 h-1/2"
+        />
+      </div>
+    </div>
+    <div class="-mt-30 z-0">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#2B3A63"
+          fill-opacity="1"
+          d="M0,32L40,53.3C80,75,160,117,240,149.3C320,181,400,203,480,181.3C560,160,640,96,720,80C800,64,880,96,960,133.3C1040,171,1120,213,1200,197.3C1280,181,1360,107,1400,69.3L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+        ></path>
+      </svg>
+    </div>
+
+    <div id="Actualite" class="space-y-10">
+      <h1 class="text-4xl ml-40">Actualités</h1>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              id="content"
+              class="flex flex-col space-y-4 mt-4 justify-center items-center"
+            >
+              <img
+                src="../assets/paysage.png"
+                alt="paysage"
+                class="w-2/3 h-2/3"
+              />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              id="content"
+              class="flex flex-col space-y-4 mt-4 justify-center items-center"
+            >
+              <img
+                src="../assets/paysage.png"
+                alt="paysage"
+                class="w-2/3 h-2/3"
+              />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              id="content"
+              class="flex flex-col space-y-4 mt-4 justify-center items-center"
+            >
+              <img
+                src="../assets/paysage.png"
+                alt="paysage"
+                class="w-2/3 h-2/3"
+              />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div id="bouton-swipper">
+          <div class="swiper-button-next px-10"></div>
+          <div class="swiper-button-prev "></div>
+        </div>
+      </div>
+    </div>

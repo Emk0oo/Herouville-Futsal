@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="../css/output.css" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-
-    <link
-      rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
@@ -25,7 +20,7 @@
     <nav
       class="bg-bleu p-4 flex justify-between items-center text-white text-xl sticky top-0 z-20"
     >
-      <img src="../assets/logo.png" alt="logo" class="w-28" />
+      <img src="../assets/logo.png" alt="logo" class="w-36" />
 
       <ul class="flex gap-4 text-white mr-20">
         <li>
@@ -44,7 +39,7 @@
     </nav>
 
     <div class="flex justify-center gap-4 items-center bg-bleu text-white">
-      <div class="ml-10 w-3/5 z-10">
+      <div class="ml-40 w-3/5 z-10">
         <h1 class="text-4xl">Bienvenue sur notre site</h1>
         <p class="mt-4 max-w-[90%]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
@@ -69,75 +64,156 @@
       </svg>
     </div>
 
-    <div id="Actualite">
-      <h1 class="text-4xl">Actualités</h1>
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide text-center">
-            <h1 class="text-2xl">Titre Article</h1>
-            <img
-              src="../assets/paysage.png"
-              alt="paysage"
-              class="w-1/2 h-1/2"
-            />
-            <p>Lorem</p>
+    <div id="contentPage" class="space-y-20">
+      <div id="Actualite" class="space-y-10">
+        <h1 class="text-4xl ml-40 text-bleuClair">Actualités</h1>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                id="content"
+                class="flex flex-col space-y-10 mt-6 mb-6 justify-center items-center"
+              >
+                <img
+                  src="../assets/paysage.png"
+                  alt="paysage"
+                  class="w-2/3 h-2/3"
+                />
+                <p class="text-sm">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                id="content"
+                class="flex flex-col space-y-10 mt-6 mb-6 justify-center items-center"
+              >
+                <img
+                  src="../assets/paysage.png"
+                  alt="paysage"
+                  class="w-2/3 h-2/3"
+                />
+                <p class="text-sm">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                id="content"
+                class="flex flex-col space-y-10 mt-6 mb-6 justify-center items-center"
+              >
+                <img
+                  src="../assets/paysage.png"
+                  alt="paysage"
+                  class="w-2/3 h-2/3"
+                />
+                <p class="text-sm">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
           </div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          ...
+          <div id="bouton-swipper">
+            <div class="swiper-button-next -mr-2"></div>
+            <div class="swiper-button-prev -ml-2"></div>
+          </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+      </div>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+      <div id="histoire" class="flex flex-col gap-y-4 mb-4">
+        <h1 class="text-4xl ml-[10vw] text-bleuClair">Notre histoire</h1>
+        <div class="text-center mx-16 space-y-8">
+          <p class="">
+            Le Club de Futsal de Hérouville-Saint-Clair, depuis ses débuts,
+            incarne l'esprit du jeu, de la communauté et de la compétition.
+            Fondé sur des valeurs de passion, de solidarité et de dépassement de
+            soi, notre club a su créer des liens solides au sein de notre ville
+            et au-delà.
+          </p>
+          <p>
+            Animés par leur amour du jeu, un petit groupe d'amateurs a uni ses
+            forces pour créer une véritable institution dédiée à la promotion du
+            Futsal et à l'épanouissement de ses pratiquants.
+          </p>
+          <button class="bg-jauneLeopard text-bleu p-2 rounded-xl">
+            En savoir plus
+          </button>
+        </div>
+      </div>
 
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
+      <div id="Equipe" class="">
+        <h1 class="text-4xl ml-40 text-bleuClair">L'équipe</h1>
+        <div class="text-center space-y-8">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  id="content"
+                  class="flex flex-col space-y-10 mt-6 mb-6 justify-center items-center"
+                >
+                  <img
+                    src="../assets/paysage.png"
+                    alt="paysage"
+                    class="w-full h-full"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  id="content"
+                  class="flex flex-col space-y-10 mt-6 mb-6 justify-center items-center"
+                >
+                  <img
+                    src="../assets/paysage.png"
+                    alt="paysage"
+                    class="w-full h-full"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  id="content"
+                  class="flex flex-col space-y-10 mt-6 mb-6 justify-center items-center"
+                >
+                  <img
+                    src="../assets/paysage.png"
+                    alt="paysage"
+                    class="w-full h-full"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div id="bouton-swipper">
+              <div class="swiper-button-next -mr-2"></div>
+              <div class="swiper-button-prev -ml-2"></div>
+            </div>
+          </div>
+          <button class="bg-jauneLeopard text-bleu p-2 rounded-xl items-center">
+            En savoir plus
+          </button>
+        </div>
       </div>
     </div>
 
-    <div id="histoire" class="flex flex-col gap-y-4 mb-4">
-      <h1 class="text-4xl ml-10">Notre histoire</h1>
-      <div class="text-center mx-16 max-w-[90%] space-y-4">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum
-        </p>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum
-        </p>
-        <button class="bg-bleu ">
-          Button
-        </button>
-      </div>
-
-    </div>
-
-    <div id="equipe">
-      <button class="border">Button</button>
-
-    </div>
-
-    <footer class="bg-bleu p-4 text-white text-center w-full h-auto">
+    <footer class="bg-bleu p-4 text-white text-center w-full h-auto mt-10">
       <div class="grid grid-cols-3 divide-x divide-none h-full">
         <div id="sponsor" class="flex flex-col content-center">
           <h2>Sponsors</h2>
@@ -157,12 +233,12 @@
           </div>
         </div>
 
-        <div id="socialMedia" class="flex place-content-end">
-          <img src="../assets/facebook.png" alt="facebook" class="w-16 h-16" />
+        <div id="socialMedia" class="flex gap-4 place-content-end">
+          <img src="../assets/facebook.png" alt="facebook" class="w-12 h-12" />
           <img
             src="../assets/instagram.png"
             alt="instagram"
-            class="w-16 h-16"
+            class="w-12 h-12"
           />
         </div>
       </div>
@@ -178,6 +254,5 @@
   ></script>
   <script src="../js/map.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   <script src="../js/swiper.js"></script>
 </html>
