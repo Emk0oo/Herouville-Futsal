@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Accueil</title>
     <link rel="stylesheet" href="../css/output.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
+    <link rel="icon" href="../assets/logo.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -20,7 +22,7 @@
     <nav
       class="bg-bleu p-4 flex justify-between items-center text-white text-xl sticky top-0 z-20"
     >
-      <img src="../assets/logo.png" alt="logo" class="w-36" />
+      <img src="../assets/logo.png" alt="logo" class="w-28" />
 
       <ul class="flex gap-4 text-white mr-20">
         <li>
@@ -38,9 +40,9 @@
       </ul>
     </nav>
 
-    <div class="flex justify-center gap-4 items-center bg-bleu text-white">
-      <div class="ml-40 w-3/5 z-10">
-        <h1 class="text-4xl">Bienvenue sur notre site</h1>
+    <div class="flex  justify-center gap-4 items-center bg-bleu text-white">
+      <div class="ml-[10vw] w-3/5 z-10">
+        <h1 class="text-4xl ">Bienvenue sur notre site</h1>
         <p class="mt-4 max-w-[90%]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
           voluptates.
@@ -66,9 +68,9 @@
 
     <div id="contentPage" class="space-y-20">
       <div id="Actualite" class="space-y-10">
-        <h1 class="text-4xl ml-40 text-bleuClair">Actualités</h1>
+        <h1 class="text-4xl ml-[10vw] text-bleuClair">Actualités</h1>
 
-        <div class="swiper mySwiper">
+        <div class="swiper article">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div
@@ -134,7 +136,7 @@
 
       <div id="histoire" class="flex flex-col gap-y-4 mb-4">
         <h1 class="text-4xl ml-[10vw] text-bleuClair">Notre histoire</h1>
-        <div class="text-center mx-16 space-y-8">
+        <div class="text-center mx-16 space-y-8 ml-[10vw]">
           <p class="">
             Le Club de Futsal de Hérouville-Saint-Clair, depuis ses débuts,
             incarne l'esprit du jeu, de la communauté et de la compétition.
@@ -153,10 +155,10 @@
         </div>
       </div>
 
-      <div id="Equipe" class="">
-        <h1 class="text-4xl ml-40 text-bleuClair">L'équipe</h1>
+      <div id="Equipe" class="space-y-10">
+        <h1 class="text-4xl ml-[10vw] text-bleuClair">L'équipe</h1>
         <div class="text-center space-y-8">
-          <div class="swiper mySwiper">
+          <div class="swiper equipe">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div
@@ -166,8 +168,12 @@
                   <img
                     src="../assets/paysage.png"
                     alt="paysage"
-                    class="w-full h-full"
+                    class="w-2/3 h-2/3"
                   />
+                  <p class="text-sm">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -178,8 +184,12 @@
                   <img
                     src="../assets/paysage.png"
                     alt="paysage"
-                    class="w-full h-full"
+                    class="w-2/3 h-2/3"
                   />
+                  <p class="text-sm">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -190,12 +200,42 @@
                   <img
                     src="../assets/paysage.png"
                     alt="paysage"
-                    class="w-full h-full"
+                    class="w-2/3 h-2/3"
                   />
+                  <p class="text-sm">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
                 </div>
               </div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide"><div
+                id="content"
+                class="flex flex-col space-y-10 mt-6 mb-6 justify-center items-center"
+              >
+                <img
+                  src="../assets/paysage.png"
+                  alt="paysage"
+                  class="w-2/3 h-2/3"
+                />
+                <p class="text-sm">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div></div>
+              <div class="swiper-slide"><div
+                id="content"
+                class="flex flex-col space-y-10 mt-6 mb-6 justify-center items-center"
+              >
+                <img
+                  src="../assets/paysage.png"
+                  alt="paysage"
+                  class="w-2/3 h-2/3"
+                />
+                <p class="text-sm">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div></div>
               <div class="swiper-slide">Slide 6</div>
               <div class="swiper-slide">Slide 7</div>
               <div class="swiper-slide">Slide 8</div>
@@ -247,6 +287,7 @@
       </div>
     </footer>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="

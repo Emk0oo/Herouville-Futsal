@@ -7,9 +7,16 @@
 }
 
 .swiper {
-  width: 60%;
-  height: 10%;
+  width: 85%;
 }
+
+.equipe {
+  width: 95%;
+
+}
+
+
+
 
 .swiper-slide {
   text-align: center;
@@ -20,6 +27,8 @@
   justify-content: center;
   align-items: center;
 }
+
+
 
 /* swiper-button-next,
 .swiper-button-prev {
